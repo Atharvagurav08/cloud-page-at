@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Small Parser</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/main.css'>
+</head>
+<body>
+    <center>
+        <h1>Course Project - Cloud web page</h1>
+        <h2>Subject - Comparative Programming Languages</h2>
+        <h3>CSU ID - 2812706</h3>
+        <br><br><br><br>
+        <form action="/submit" method="post">
+            <label for="selectedf">Choose a log file:</label>
+            <select name="selectedf" id="selectedf">
+                {% for item in filelist %}
+                    <option value="{{item}}">{{item}}</option>
+                {% endfor %}
+        </select>
+        <br><br><br>
+        <a href="/submit">
+            <button style=" padding: 0.5% 2.5% 0.5% 2.5%; font-size: medium; background-color: #F1C40F; border-radius: 7px;">
+                Compute Time
+            </button>
+        </a>
+        </form>
+
+        {{time}}
+    </center>
+
+</body>
+</html>
