@@ -23,9 +23,9 @@ python app.py
 ```
 Open your web browser and go to http://127.0.0.1:5000/ to access the application.
 ## Application Structure
-- app.py: The main Flask application file.
-- templates/homepage.html: HTML template for the home page.
-- templates/time.html: HTML template for displaying the parsed time.
+1. app.py: The main Flask application file.
+2. templates/homepage.html: HTML template for the home page.
+3. templates/time.html: HTML template for displaying the parsed time.
 
 ## How It Works
 - The user visits the home page where a list of available log files is displayed.
